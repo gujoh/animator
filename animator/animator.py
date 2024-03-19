@@ -94,7 +94,7 @@ class Plotter:
     A class to plot simulations in  2D.
     Used together with Animator.
     """
-    def __init__(self, standard=None, custom=None):
+    def __init__(self, standard=None, custom=None, norm=None):
         """
         Initializes the necessary attributes for a Plotter object.
 
@@ -107,11 +107,9 @@ class Plotter:
         norm: Normalize, optional
             A user defined Normalize object. Default is None.
             Can be used to control 
-        scatter: bool, optional
-            Whether or not to use scatter as opposed to imshow.
         """
         
-        self.norm = None
+        self.norm = norm
         if standard is not None:
             self.cmap = colormaps[standard]
         elif custom is not None:
