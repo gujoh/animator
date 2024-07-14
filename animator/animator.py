@@ -62,7 +62,6 @@ class Animator:
         -------
         None
         """
-
         def on_click(e):
             """
             Pauses the animation when pressing space. 
