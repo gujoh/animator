@@ -106,7 +106,6 @@ class Plotter:
             A user defined Normalize object. Default is None.
             Can be used to control 
         """
-        
         self.norm = norm
         if standard is not None:
             self.cmap = colormaps[standard]
