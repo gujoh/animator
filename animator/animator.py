@@ -36,7 +36,6 @@ class Animator:
             The name/path of the animation you wish to save. 
             Default is "simulation". 
         """
-
         self.update = update
         self.interval = interval
         self.init = init
